@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="description" content="Contact us page">
+    <title>Contact us page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300&display=swap" rel="stylesheet">
+
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+
+<body>
+    <nav aria-label="Navigation bar">
+        <div>
+            <a href="index.html"><img src="img/logo.svg" height="75" width="100" alt="logo"></a>
+            <a class="nav-btn" href="index.html" title="About us link" aria-label="About us link">About us</a>
+            <a class="nav-btn" href="#" title="Services link" aria-label="Services link">Services</a>
+            <a class="nav-btn" href="#" title="Pricing link" aria-label="Pricing link">Pricing</a>
+            <a class="nav-btn" href="color_theory_for_designers.html" title="Blog link" aria-label="Blog link">Blog</a>
+            <a class="contact-btn" href="contact.html" title="Contact link" aria-label="Contact-link">CONTACT</a>
+        </div>
+    </nav>
+
+    <section class="map-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52983.55059947308!2d-98.52728606109359!3d33.903251986413196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8652db0b7d1ca639%3A0x3b22e12b908fe9ed!2sWichita%20Falls%2C%20Texas%2076301%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1668535767811!5m2!1ses!2ses" style="border:0; margin-top: 75px;width: 100%; height: 450px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <div class="container">
+        <section class="contact-form-section">
+            <div class="contact-info">
+                <div class="info info-left">
+                    <div class="info-title">
+                        <button class="social-media-btn phone"></button>
+                        <span class="small-title">Phone</span>
+                    </div>
+                    <span class="black-text">+1 (234) 567-89-00</span>
+                </div>
+                <div class="info">
+                    <div class="info-title">
+                        <button class="social-media-btn email"></button>
+                        <span class="small-title">Email</span>
+                    </div>
+                    <span class="black-text">info@agency.com</span>
+                </div>
+                <div class="info info-right">
+                    <div class="info-title">
+                        <button class="social-media-btn compass"></button>
+                        <span class="small-title">Address</span>
+                    </div>
+                    <span class="black-text">2247 Lunetta Street, TX 76301</span>
+                </div>
+            </div>
+
+            <form>
+                <div class="form-section">
+                    <h1>Get In Touch</h1>
+                    <span class="form-text">Fields with * are required</span><br>
+                </div>
+            
+                <div class="form-grid">
+                    <div class="form-column">
+                        <div>
+                            <label for="name" class="form-label">Your name *</label><br>
+                            <input class="form-input" type="text" id="name" name="name" required aria-required="true"><br>
+                        </div>
+                
+                        <div>
+                            <label for="email" class="form-label">Your email *</label><br>
+                            <input class="form-input" type="email" id="email" name="email" required aria-required="true">
+                        </div>
+                
+                        <div>
+                            <label for="phone" class="form-label">Your phone number *</label><br>
+                            <input class="form-input" type="tel" id="phone" name="phone" required aria-required="true">
+                        </div>
+                    </div>
+                
+                    <div class="form-column">
+                        <div>
+                            <label for="interest" class="form-label">I am interested in... *</label><br>
+                            <select class="form-input" id="interest" name="interest" required aria-required="true">
+                                <option value="" disabled selected>Select an option</option>
+                            </select>
+                        </div>
+                
+                        <div class="form-textarea-container">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-textarea" id="message" name="message"></textarea>
+                        </div>
+                
+                        <div class="form-checkbox-container">
+                            <input type="checkbox" id="pPolicy" name="pPolicy" required aria-required="true">	
+                            <label class="form-checkbox-label" for="pPolicy">I have read and accept the <a href="#" class="privacy-policy-link">privacy policy</a> *</label><br>
+                        </div>
+                
+                        <input type="submit" value="SUBMIT NOW" class="form-submit-button" aria-label="Submit form">
+                    </div>
+                </div>                
+            </form>
+        </section>
+    </div>
+
+    <footer aria-label="Footer">
+        <div class="main-footer-container">
+          <ul>
+            <li><h2>Agency</h2></li>
+          </ul>
+          <ul>
+            <li class="small-title">MENU</li>
+            <li><a href="index.html" title="About us link" aria-label="About us link">About us</a></li>
+            <li><a href="#" title="Services link" aria-label="Services link">Services</a></li>
+            <li><a href="#" title="Blog link" aria-label="Blog link">Blog</a></li>
+            <li><a href="contact.html" title="Contact link" aria-label="Contact link">Contact</a></li>
+          </ul>
+          <ul>
+            <li class="small-title">SERVICES</li>
+            <li><a href="#" title="Design link" aria-label="Design link">Design</a></li>
+            <li><a href="#" title="Development link" aria-label="Development link">Development</a></li>
+            <li><a href="#" title="Marketing link" aria-label="Marketing link">Marketing</a></li>
+            <li><a href="#" title="See more link" aria-label="See more link">See more</a></li>
+          </ul>
+          <ul>
+            <li class="small-title">OUR SOCIAL NETWORKS</li>
+            <li>
+              <div class="social-media-container">
+                <button class="social-media-btn facebook" aria-label="Facebook button"></button>
+                <button class="social-media-btn twitter" aria-label="Twitter button"></button>
+                <button class="social-media-btn instagram" aria-label="Instagram button"></button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      
+        <div class="legal-info-container">
+          <ul>
+            <li>Copyright © 2022 Laaqiq. All Rights Reserved.</li>
+            <li>Header background image on the bog by rawpixel.com on Freepik.com</li>
+          </ul>
+          <ul>
+            <li><a href="#" aria-label="Terms of use link">Terms of use</a></li>
+          </ul>
+          <ul>
+            <li><a href="#" aria-label="Privacy policy link">Privacy policy</a></li>
+          </ul>
+        </div>
+    </footer>      
+</body>
